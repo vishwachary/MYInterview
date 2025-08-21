@@ -26,66 +26,10 @@ Interfaces / Adapters
 External Interfaces
 
     Use whatever framework is most appropriate (they are going to be isolated here anyway)
-    <img width="1311" height="585" alt="image" src="https://github.com/user-attachments/assets/09b5da94-e48d-47ab-9141-203f611167e6" />
+  
 
 
-Example of a clean architecture project structure
-src
-|-- main
-|   |-- java
-|   |   |-- com.example.myapp
-|   |   |   |-- config
-|   |   |   |   |-- DatabaseConfig.java
-|   |   |   |   |-- ...
-|   |   |   |-- application
-|   |   |   |   |-- usecases
-|   |   |   |   |   |-- RegisterUserUseCase.java
-|   |   |   |   |   |__ ... other use cases
-|   |   |   |   |__ ...
-|   |   |   |-- domain
-|   |   |   |   |-- entities
-|   |   |   |   |   |-- User.java
-|   |   |   |   |   |__ ... other entities
-|   |   |   |   |-- valueobjects
-|   |   |   |   |   |-- ValidationResult.java
-|   |   |   |   |   |__ ... other value objects
-|   |   |   |   |__ ...
-|   |   |   |-- infrastructure
-|   |   |   |   |-- adapters
-|   |   |   |   |   |-- UserRepository.java
-|   |   |   |   |   |-- UserRepositoryJdbi.java
-|   |   |   |   |   |__ ... other adapters
-|   |   |   |   |__ ...
-|   |   |   |__ Main.java (Application entry point)
-|   |   |__ resources
-|   |       |__ application.properties (Database and other configurations)
-|   |__ resources
-|       |-- db
-|       |   |-- migrations
-|       |   |   |__ ...
-|       |   |__ hikari.properties (HikariCP database connection pool config)
-|       |__ logback.xml (Logging configuration)
-|__ test
-    |-- java
-    |   |__ com.example.myapp
-    |       |-- application
-    |       |   |-- usecases
-    |       |   |   |-- RegisterUserUseCaseTest.java
-    |       |   |   |__ ... other use case tests
-    |       |   |__ ...
-    |       |-- infrastructure
-    |       |   |-- adapters
-    |       |   |   |-- UserRepositoryJdbiTest.java
-    |       |   |   |__ ... other adapter tests
-    |       |   |__ ...
-    |       |-- domain
-    |       |   |   |-- valueobjects
-    |       |   |   |   |-- ValidationResultTest.java
-    |       |   |   |   |__ ... other value object tests
-    |       |   |   |__ ...
-    |       |__ IntegrationTests.java (Integration tests)
-    |__ resources
-        |__ ... (Test resources)
+
 Implementation Plan
 Nio:
 
