@@ -27,35 +27,3 @@ External Interfaces
 
     Use whatever framework is most appropriate (they are going to be isolated here anyway)
   
-
-
-
-Implementation Plan
-Nio:
-
-Entities / Repositories
-Library
-
-Use Cases
-OxygenPlugin
-
-Controllers / Adapters
-Nio
-
-    Entities
-    Repositories for each Entity
-
- 
-Library
-
-    Commands
-    Use Cases
-    Command Handler
-
- 
-Plugin
-
-    Command Context initializer
-    Command adapter
-
- 
