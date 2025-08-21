@@ -1,6 +1,5 @@
 Using as a reference the clean architecture material from Uncle Bob, we want to implement a similar project structure to achieve a clean code with low coupling and high cohesion. The project structure proposed originally consisted of 5 layers:
 
-YsN6twE3-4Q4OYpgxoModmx29I8zthQ3f0OR
 Entities
 
     Represent your domain object
