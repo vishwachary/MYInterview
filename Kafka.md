@@ -1,4 +1,17 @@
 Running Apache Kafka locally with Rancher Desktop’s Kubernetes is a common developer need, but requires a few extra steps because Kafka depends on both Zookeeper and specific networking considerations. Here’s a step-by-step guide: 
+downlaod and unzip helm.exe to the a folder  example here PS C:\Ddrive\softwares\helm-v3.18.6-windows-amd64\windows-amd64>
+https://github.com/helm/helm/releases 
+
+PS C:\Ddrive\softwares\helm-v3.18.6-windows-amd64\windows-amd64> helm repo add bitnami https://charts.bitnami.com/bitnami
+PS C:\Ddrive\softwares\helm-v3.18.6-windows-amd64\windows-amd64> helm repo add bitnami https://charts.bitnami.com/bitnami
+"bitnami" has been added to your repositories
+PS C:\Ddrive\softwares\helm-v3.18.6-windows-amd64\windows-amd64> helm repo update
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "bitnami" chart repository
+Update Complete. ⎈Happy Helming!⎈
+PS C:\Ddrive\softwares\helm-v3.18.6-windows-amd64\windows-amd64>
+
+
 1. Use a Helm Chart (Recommended/Easiest) 
 
 The Bitnami Kafka Helm Chart  is the most common and developer-friendly way to deploy Kafka and Zookeeper to your local cluster. 
