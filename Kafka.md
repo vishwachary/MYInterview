@@ -24,9 +24,8 @@ sh
 1
 2
 helm repo add bitnami https://charts.bitnami.com/bitnami
-helm repo update
- 
- 
+
+helm repo update 
 
 Step 2: Install Kafka with Zookeeper   
 sh
