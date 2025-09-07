@@ -1,5 +1,19 @@
 # MYInterview
 
+Sample Answer:
+
+“In my project, I followed a few best practices while designing REST endpoints.
+
+First, I always return responses wrapped in ResponseEntity. This way I can control HTTP status codes and headers explicitly. For example, 200 OK for successful fetches, 201 Created with a Location header after creating a student, and 204 No Content when updating marks. This makes the API more predictable and client-friendly.
+
+Second, I integrated Springdoc OpenAPI, which automatically generates Swagger documentation. This was very useful because frontend developers and external consumers could discover and test endpoints directly through Swagger UI without relying on Postman collections or manual documentation.
+
+Third, I applied Spring Security with role-based access. By design, only users with the ADMIN role can update student marks. Read-only operations, like fetching student details or addresses, don’t require authentication. This ensures data integrity while keeping the system accessible for general queries.
+
+Additionally, I used DTOs instead of exposing JPA entities directly. This keeps the API response clean, avoids overexposing database structures, and allows flexibility if the persistence layer changes.
+
+Overall, my approach was to keep the APIs consistent with REST principles, well-documented, secure where necessary, and easy for clients to consume.”
+
 lets write a spring batch program https://javabeanbag.blogspot.com/2025/08/spring-batch-beginners-guide-with-real.html
 How have your skills in Apache Lucene contributed to the search functionalities in your recent projects?
 
