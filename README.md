@@ -1,5 +1,7 @@
 https://javascript.plainenglish.io/can-spring-boot-handle-500-000-requests-per-second-yes-heres-how-to-do-it-8cd859fb638f
 
+https://medium.com/@thecodealchemistX/design-a-robust-payment-service-in-java-a-step-by-step-guide-d30186a3c469
+
 # MYInterview
 
  Beginner (Fundamentals)
